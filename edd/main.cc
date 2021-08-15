@@ -4,5 +4,4 @@
 int main(int argc, char** argv)
 {
     std::cout << "Yes" << std::endl;
-    func();
 }
