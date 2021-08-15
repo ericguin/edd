@@ -1,11 +1,12 @@
+add_executable(edd main.cc)
+add_executable(test test.cc)
+
 add_subdirectory(components)
 
-add_executable(edd main.cc)
 
 target_link_libraries(edd PUBLIC argparse)
 
-add_executable(test test.cc)
 
-target_link_libraries(test
+target_link_libraries(test CppUTest CppUTestExt
     argparse_test
 )
